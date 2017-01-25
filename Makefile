@@ -24,9 +24,10 @@ ifeq ($(origin GOOS), undefined)
 endif
 
 # Define docker container and bin names
+REPO = github.com
 ORG = apprenda
 NAME = primes
-APP_PATH = /go/src/github.com/$(ORG)/$(NAME)
+APP_PATH = /go/src/$(REPO)/$(ORG)/$(NAME)
 
 ifeq ("$(shell docker images -q $(ORG)/$(NAME)-build)", "")
 	DOCKER_DEPS = build-container
@@ -56,4 +57,5 @@ build-container: clean
 
 docker: $(DOCKER_DEPS)
 	docker run --rm -v `pwd`:$(APP_PATH) -w $(APP_PATH) $(ORG)/$(NAME)-build "./docker-build.sh" | tar -xz
-	docker build -t $(ORG)/$(NAME) .
+	docker build -t $(ORG)/$(NAME):$(VERSION) .
+	docker tag $(ORG)/$(NAME):$(VERSION) $(ORG)/$(NAME):latest
