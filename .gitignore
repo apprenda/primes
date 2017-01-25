@@ -43,3 +43,5 @@ package/source
 package/out
 integration/vendor
 vendor-provision/*
+
+.glide

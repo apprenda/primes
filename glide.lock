@@ -1,0 +1,18 @@
+hash: 4da510d7199ad1871ef5b4314c933e05dc8fd7160e7295b9eb941210777d1b4a
+updated: 2017-01-21T00:54:06.973712982-05:00
+imports:
+- name: github.com/golang-collections/go-datastructures
+  version: 59788d5eb2591d3497ffb8fafed2f16fe00e7775
+  subpackages:
+  - bitarray
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/spf13/cobra
+  version: dc208f4211e7f6df7ec8cb62640f57d3e154910d
+  subpackages:
+  - cobra
+- name: github.com/spf13/pflag
+  version: a232f6d9f87afaaa08bafaff5da685f974b83313
+- name: google.golang.org/grpc
+  version: 50955793b0183f9de69bd78e2ec251cf20aab121
+testImports: []
