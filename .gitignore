@@ -45,3 +45,4 @@ integration/vendor
 vendor-provision/*
 
 .glide
+generated

@@ -1,5 +1,5 @@
-hash: 4da510d7199ad1871ef5b4314c933e05dc8fd7160e7295b9eb941210777d1b4a
-updated: 2017-01-21T00:54:06.973712982-05:00
+hash: d7ffc3794ab12afeef68bec467fffd922a37cc0a1ece21395ab2d697eafe0f3f
+updated: 2017-01-26T14:49:19.306990718-05:00
 imports:
 - name: github.com/golang-collections/go-datastructures
   version: 59788d5eb2591d3497ffb8fafed2f16fe00e7775
@@ -7,6 +7,8 @@ imports:
   - bitarray
 - name: github.com/inconshreveable/mousetrap
   version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/jteeuwen/go-bindata
+  version: a0ff2567cfb70903282db057e799fd826784d41d
 - name: github.com/spf13/cobra
   version: dc208f4211e7f6df7ec8cb62640f57d3e154910d
   subpackages:

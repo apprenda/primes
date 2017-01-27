@@ -1,4 +1,21 @@
 # Default values for primes.
 # This is a YAML-formatted file.
 # Declare name/value pairs to be passed into your templates.
-# name: value
+image:
+	repository: quay.io/codymccain/primes
+	tag: latest
+	pullPolicy: IfNotPresent
+manager:
+	resources:
+		limits:
+			cpu: 100m
+			memory: 64Mi
+worker:
+	resources:
+		limits:
+			cpu: 500m
+			memory: 128Mi
+
+
+
+

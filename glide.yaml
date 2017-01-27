@@ -5,3 +5,4 @@ import:
   - cobra
 - package: github.com/golang-collections/go-datastructures
 - package: google.golang.org/grpc
+- package: github.com/jteeuwen/go-bindata
